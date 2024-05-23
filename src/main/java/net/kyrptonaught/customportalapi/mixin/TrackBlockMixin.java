@@ -164,7 +164,7 @@ public abstract class TrackBlockMixin {
     }
 
     @Inject(method = "scheduledTick", at = @At("HEAD"), cancellable = true)
-    private void trackBlock$tick(BlockState state, ServerWorld level, BlockPos pos, Random p_60465_, CallbackInfo ci) {
+    private void CPAtrackBlockTick(BlockState state, ServerWorld level, BlockPos pos, Random p_60465_, CallbackInfo ci) {
         TrackPropagator.onRailAdded(level, pos, state);
         if (!state.get(SHAPE)
                 .isPortal())
