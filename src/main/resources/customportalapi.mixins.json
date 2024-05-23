@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_16",
   "plugin": "net.kyrptonaught.customportalapi.compat.create.CreateMixinPlugin",
   "mixins": [
+    "DCEntityMixin",
     "EntityMixin",
     "ServerPlayerMixin",
     "portalLighters.AbstractFireMixin",

@@ -21,7 +21,8 @@ public final class CreateMixinPlugin implements IMixinConfigPlugin {
     private static final Supplier<Boolean> TRUE = () -> true;
 
     private static final Map<String, Supplier<Boolean>> CONDITIONS = ImmutableMap.of(
-            "net.kyrptonaught.customportalapi.mixin.TrackBlockMixin", () -> FabricLoader.getInstance().isModLoaded("create")
+            "net.kyrptonaught.customportalapi.mixin.TrackBlockMixin", () -> FabricLoader.getInstance().isModLoaded("create"),
+            "net.kyrptonaught.customportalapi.mixin.DCEntityMixin", () -> FabricLoader.getInstance().isModLoaded("create")
     );
 
     @Override
